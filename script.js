@@ -1,7 +1,7 @@
 var c = document.getElementById("game");
 var ctx = c.getContext("2d");
-const WIDTH = c.WIDTH;
-const HEIGHT = c.HEIGHT;
+const WIDTH = c.width;
+const HEIGHT = c.width;
 const CELL_WIDTH = 10;
 const CELL_HEIGHT = 10;
 
@@ -14,12 +14,13 @@ function SimState() {
         this.state[w] = Array(Math.floor(HEIGHT/CELL_HEIGHT)).fill(0);
     }
 
-
     this.updateState = function() {
       if (mouseDown) {
+        ctx.fillStyle="#FF0000"
         ctx.fillRect(mousePos.x*CELL_WIDTH, mousePos.y*CELL_HEIGHT, CELL_WIDTH, CELL_HEIGHT);
       };
       console.log("hi");
+      ctx.stroke();
     };
 
     this.render = function() {
