@@ -1,7 +1,7 @@
 var c = document.getElementById("game");
 var ctx = c.getContext("2d");
 const WIDTH = c.width;
-const HEIGHT = c.width;
+const HEIGHT = c.height;
 const CELL_WIDTH = 10;
 const CELL_HEIGHT = 10;
 
